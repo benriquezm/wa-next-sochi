@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+import WCCounter from "@/components/wc-counter/wc-counter";
+
 const Home = () => {
   return(
     <main>
@@ -22,25 +24,7 @@ const Home = () => {
         </div>
       </header>
       <section className="wrapper-high-impact">
-        <span className="counter-header">FALTAN</span>
-        <div className="wrapper-counter">
-          <div className="counter-circle">
-            <p className="counter-value">00</p>
-            <p className="counter-text">DÍAS</p>
-          </div>
-          <div className="counter-circle">
-            <p className="counter-value">00</p>
-            <p className="counter-text">HRS</p>
-          </div>
-          <div className="counter-circle">
-            <p className="counter-value">00</p>
-            <p className="counter-text">MIN</p>
-          </div>
-          <div className="counter-circle">
-            <p className="counter-value">00</p>
-            <p className="counter-text">SEG</p>
-          </div>
-        </div>
+        <WCCounter />
         <div className="wrapper-video">
           <Image
             src="/esqui-alpino.jpg"
