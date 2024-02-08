@@ -1,95 +1,117 @@
 import Image from "next/image";
-import styles from "./page.module.css";
 
-export default function Home() {
-  return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
+const Home = () => {
+  return(
+    <main>
+      <header>
         <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+          <Image
+            src="/logo-sochi.png"
+            width={140}
+            height={60}
+            alt="Sochi.Ru"
+          />
         </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+        <div>
+          <Image
+            src="/logo-claro-sports.png"
+            width={140}
+            height={60}
+            alt="Claro Sports"
+          />
+        </div>
+      </header>
+      <section>
+        <div>
+          <span>FALTAN</span>
+          <div>
+            <p>00</p>
+            <p>DÍAS</p>
+          </div>
+          <div>
+            <p>00</p>
+            <p>HRS</p>
+          </div>
+          <div>
+            <p>00</p>
+            <p>MIN</p>
+          </div>
+          <div>
+            <p>00</p>
+            <p>SEG</p>
+          </div>
+        </div>
+        <div>
+          <Image
+            src="/esqui-alpino.jpg"
+            width={640}
+            height={480}
+            alt="Ski Alpino"
+          />
+        </div>
+      </section>
+      <section>
+        <h1>CLARO SPORTS EN SOCHI 2014</h1>
+        <div>
+          <Image
+            src="/team-latam.png"
+            width={200}
+            height={200}
+            alt="Team Latam"
+          />
+          <p>TEAM LATAM</p>
+        </div>
+        <div>
+          <Image
+            src="/travel-meets-fashion.png"
+            width={200}
+            height={200}
+            alt="Travel Meets Fashion"
+          />
+          <p>TRAVEL MEETS FASHION</p>
+        </div>
+        <div>
+          <Image
+            src="/velocidad-riesgo.png"
+            width={200}
+            height={200}
+            alt="Velocidad y Riesgo"
+          />
+          <p>VELOCIDAD Y RIESGO</p>
+        </div>
+        <div>
+          <Image
+            src="/experiencia.png"
+            width={200}
+            height={200}
+            alt="Experiencia Multimedia"
+          />
+          <p>EXPERIENCIA MULTIMEDIA</p>
+        </div>
+      </section>
+      <footer>
+        <div>
+          <a href="#">Aviso de privacidad</a>
+          <span> / </span>
+          <a href="#">Contacto</a>
+        </div>
+        <div>
+          <Image
+            src="/logo-sochi-color.png"
+            width={140}
+            height={60}
+            alt="Sochi.Ru"
+          />
+        </div>
+        <div>
+          <a href="#">Instangram</a>
+          <a href="#">X</a>
+          <a href="#">Facebook</a>
+          <a href="#">YouTube</a>
+        </div>
+      </footer>
     </main>
   );
-}
+};
+
+export default Home;
