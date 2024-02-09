@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import WCCounter from "@/components/wc-counter/wc-counter";
+import WCCarouselMulticontent from "@/components/wc-carousel-multicontent/wc-carousel-multicontent";
 
 const Home = () => {
   return(
@@ -25,56 +26,19 @@ const Home = () => {
       </header>
       <section className="wrapper-high-impact">
         <WCCounter />
-        <div className="wrapper-video">
-          <Image
+        <div className="wrapper-video wrapper-videoplayer">
+          {/**
+           * <Image
             src="/esqui-alpino.jpg"
             width={640}
             height={480}
             alt="Ski Alpino"
           />
+           */}
+          <iframe id="wc-videoplayer" className="iframe-videoplayer" width="640" height="480" src="https://www.youtube.com/embed/d2pR0bxIPDA?autoplay=1&mute=1"></iframe>
         </div>
       </section>
-      <section className="carousel-multicontent">
-        <h1 className="carousel-header">CLARO SPORTS EN SOCHI 2014</h1>
-        <div className="wrapper-carousel">
-          <div className="wrapper-video">
-            <Image
-              src="/team-latam.png"
-              width={200}
-              height={200}
-              alt="Team Latam"
-            />
-            <p>TEAM LATAM</p>
-          </div>
-          <div className="wrapper-video">
-            <Image
-              src="/travel-meets-fashion.png"
-              width={200}
-              height={200}
-              alt="Travel Meets Fashion"
-            />
-            <p>TRAVEL MEETS FASHION</p>
-          </div>
-          <div className="wrapper-video">
-            <Image
-              src="/velocidad-riesgo.png"
-              width={200}
-              height={200}
-              alt="Velocidad y Riesgo"
-            />
-            <p>VELOCIDAD Y RIESGO</p>
-          </div>
-          <div className="wrapper-video">
-            <Image
-              src="/experiencia.png"
-              width={200}
-              height={200}
-              alt="Experiencia Multimedia"
-            />
-            <p>EXPERIENCIA MULTIMEDIA</p>
-          </div>
-        </div>
-      </section>
+      <WCCarouselMulticontent />
       <footer className="wrapper-footer">
         <div className="wrapper-links">
           <a href="#">Aviso de privacidad</a>
