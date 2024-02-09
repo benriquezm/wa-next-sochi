@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "http://benriquezm.github.io/wa-next-sochi",
-  "type": "module",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d .next",
