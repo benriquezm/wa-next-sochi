@@ -26,7 +26,7 @@ const Home = () => {
       </header>
       <section className="wrapper-high-impact">
         <WCCounter />
-        <div className="wrapper-video">
+        <div className="wrapper-video wrapper-videoplayer">
           {/**
            * <Image
             src="/esqui-alpino.jpg"
@@ -35,13 +35,7 @@ const Home = () => {
             alt="Ski Alpino"
           />
            */}
-          {/**
-           * <video id="wc-videoplayer" controls poster="/esqui-alpino.jpg" width="640" height="480" autoPlay>
-            <source id="videoplayer-mp4" src="https://fredrickjaxx.is/_assets/video/blossoms.mp4" type="video/mp4" />
-            <source id="videoplayer-webm" src="https://fredrickjaxx.is/_assets/video/blossoms.Webm" type="video/webm" />
-          </video>
-           */}
-          <iframe id="wc-videoplayer" width="640" height="480" src="https://www.youtube.com/embed/d2pR0bxIPDA?autoplay=1&mute=1"></iframe>
+          <iframe id="wc-videoplayer" className="iframe-videoplayer" width="640" height="480" src="https://www.youtube.com/embed/d2pR0bxIPDA?autoplay=1&mute=1"></iframe>
         </div>
       </section>
       <WCCarouselMulticontent />
