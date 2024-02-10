@@ -24,4 +24,4 @@ jobs:
           node-version: 20
 
       - name: Build
-        run: npm build
+        run: npm run build
