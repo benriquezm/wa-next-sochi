@@ -2,27 +2,26 @@ import Image from "next/image";
 
 import WCCounter from "@/components/wc-counter/wc-counter";
 import WCCarouselMulticontent from "@/components/wc-carousel-multicontent/wc-carousel-multicontent";
+import WCImage from "@/components/wc-image/wc-image";
 
 const Home = () => {
   return(
     <main>
       <header className="wrapper-header">
-        <div className="wrapper-header-logo">
-          <Image
-            src="logo-sochi.png"
-            width={120}
-            height={50}
-            alt="Sochi.Ru"
-          />
-        </div>
-        <div className="wrapper-header-logo">
-          <Image
-            src="logo-claro-sports.png"
-            width={120}
-            height={50}
-            alt="Claro Sports"
-          />
-        </div>
+        <WCImage
+          styleForComponent="wrapper-header-logo"
+          imageUrl="logo-sochi.png"
+          imageWidth={120}
+          imageHeight={50}
+          attrAlt="Sochi.Ru"
+        />
+        <WCImage
+          styleForComponent="wrapper-header-logo"
+          imageUrl="logo-claro-sports.png"
+          imageWidth={120}
+          imageHeight={50}
+          attrAlt="Claro Sports"
+        />
       </header>
       <section className="wrapper-high-impact">
         <WCCounter />
@@ -45,14 +44,13 @@ const Home = () => {
           <span> / </span>
           <a href="#">Contacto</a>
         </div>
-        <div className="wrapper-footer-logo">
-          <Image
-            src="logo-sochi-color.png"
-            width={140}
-            height={60}
-            alt="Sochi.Ru"
-          />
-        </div>
+        <WCImage
+          styleForComponent="wrapper-footer-logo"
+          imageUrl="logo-sochi-color.png"
+          imageWidth={140}
+          imageHeight={60}
+          attrAlt="Sochi.Ru"
+        />
         <div className="wrapper-social-media">
           <a href="#">Instangram</a>
           <a href="#">X</a>
