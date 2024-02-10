@@ -9,7 +9,7 @@ const Home = () => {
       <header className="wrapper-header">
         <div className="wrapper-header-logo">
           <Image
-            src="/logo-sochi.png"
+            src="logo-sochi.png"
             width={120}
             height={50}
             alt="Sochi.Ru"
@@ -17,7 +17,7 @@ const Home = () => {
         </div>
         <div className="wrapper-header-logo">
           <Image
-            src="/logo-claro-sports.png"
+            src="logo-claro-sports.png"
             width={120}
             height={50}
             alt="Claro Sports"
@@ -47,7 +47,7 @@ const Home = () => {
         </div>
         <div className="wrapper-footer-logo">
           <Image
-            src="/logo-sochi-color.png"
+            src="logo-sochi-color.png"
             width={140}
             height={60}
             alt="Sochi.Ru"

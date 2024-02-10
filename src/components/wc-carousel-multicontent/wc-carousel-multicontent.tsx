@@ -18,7 +18,7 @@ const WCCarouselMulticontent = () => {
                 <div className="wrapper-video">
                     <a href="https://www.youtube.com/embed/Dmf62scsWr8?autoplay=1&mute=1" onClick={handlerVideoClick}>
                         <Image
-                            src="/team-latam.png"
+                            src="team-latam.png"
                             width={200}
                             height={200}
                             alt="Team Latam"
@@ -29,7 +29,7 @@ const WCCarouselMulticontent = () => {
                 <div className="wrapper-video">
                     <a href="https://www.youtube.com/embed/m5QgmCGoTmU?autoplay=1&mute=1" onClick={handlerVideoClick}>
                     <Image
-                        src="/travel-meets-fashion.png"
+                        src="travel-meets-fashion.png"
                         width={200}
                         height={200}
                         alt="Travel Meets Fashion"
@@ -40,7 +40,7 @@ const WCCarouselMulticontent = () => {
                 <div className="wrapper-video">
                     <a href="https://www.youtube.com/embed/Xl-J44YnRtw?autoplay=1&mute=1" onClick={handlerVideoClick}>
                         <Image
-                            src="/velocidad-riesgo.png"
+                            src="velocidad-riesgo.png"
                             width={200}
                             height={200}
                             alt="Velocidad y Riesgo"
@@ -51,7 +51,7 @@ const WCCarouselMulticontent = () => {
                 <div className="wrapper-video">
                     <a href="https://www.youtube.com/embed/UmIYanq5gH8?autoplay=1&mute=1" onClick={handlerVideoClick}>
                         <Image
-                            src="/experiencia.png"
+                            src="experiencia.png"
                             width={200}
                             height={200}
                             alt="Experiencia Multimedia"
