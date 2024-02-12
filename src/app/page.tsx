@@ -2,27 +2,30 @@ import Image from "next/image";
 
 import WCCounter from "@/components/wc-counter/wc-counter";
 import WCCarouselMulticontent from "@/components/wc-carousel-multicontent/wc-carousel-multicontent";
+import WCImage from "@/components/wc-image/wc-image";
 
 const Home = () => {
   return(
     <main>
       <header className="wrapper-header">
-        <div className="wrapper-header-logo">
-          <Image
-            src="logo-sochi.png"
-            width={120}
-            height={50}
-            alt="Sochi.Ru"
-          />
-        </div>
-        <div className="wrapper-header-logo">
-          <Image
-            src="logo-claro-sports.png"
-            width={120}
-            height={50}
-            alt="Claro Sports"
-          />
-        </div>
+        <WCImage
+          attrAlt="Sochi.Ru"
+          hasLink={false}
+          imageHeight={50}
+          imageUrl="logo-sochi.png"
+          imageWidth={120}
+          linkUrl=""
+          styleForComponent="wrapper-header-logo"
+        />
+        <WCImage
+          attrAlt="Claro Sports"
+          hasLink={false}
+          imageHeight={50}
+          imageUrl="logo-claro-sports.png"
+          imageWidth={120}
+          linkUrl=""
+          styleForComponent="wrapper-header-logo"
+        />
       </header>
       <section className="wrapper-high-impact">
         <WCCounter />
@@ -45,19 +48,52 @@ const Home = () => {
           <span> / </span>
           <a href="#">Contacto</a>
         </div>
-        <div className="wrapper-footer-logo">
-          <Image
-            src="logo-sochi-color.png"
-            width={140}
-            height={60}
-            alt="Sochi.Ru"
-          />
-        </div>
+        <WCImage
+          attrAlt="Sochi.Ru"
+          hasLink={false}
+          imageHeight={60}
+          imageUrl="logo-sochi-color.png"
+          imageWidth={140}
+          linkUrl=""
+          styleForComponent="wrapper-footer-logo"
+        />
         <div className="wrapper-social-media">
-          <a href="#">Instangram</a>
-          <a href="#">X</a>
-          <a href="#">Facebook</a>
-          <a href="#">YouTube</a>
+          <WCImage
+            attrAlt="Red Social Instagram"
+            hasLink={true}
+            imageHeight={40}
+            imageUrl="icon-instagram.png"
+            imageWidth={40}
+            linkUrl="#"
+            styleForComponent="wrapper-video"
+          />
+          <WCImage
+            attrAlt="Red Social X"
+            hasLink={true}
+            imageHeight={40}
+            imageUrl="icon-x.png"
+            imageWidth={40}
+            linkUrl="#"
+            styleForComponent="wrapper-video"
+          />
+          <WCImage
+            attrAlt="Red Social Facebook"
+            hasLink={true}
+            imageHeight={40}
+            imageUrl="icon-facebook.png"
+            imageWidth={40}
+            linkUrl="#"
+            styleForComponent="wrapper-video"
+          />
+          <WCImage
+            attrAlt="Red Social YouTube"
+            hasLink={true}
+            imageHeight={40}
+            imageUrl="icon-youtube.png"
+            imageWidth={40}
+            linkUrl="#"
+            styleForComponent="wrapper-video"
+          />
         </div>
       </footer>
     </main>
