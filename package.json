@@ -2,7 +2,6 @@
   "name": "wa-next-sochi",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://benriquezm.github.io/wa-next-sochi",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

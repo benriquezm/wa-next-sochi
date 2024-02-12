@@ -1,32 +1,49 @@
 import Image from "next/image";
 
 interface IWCImage {
-    styleForComponent: string,
+    attrAlt: string,
+    hasLink: boolean,
+    imageHeight: number,
     imageUrl: string,
     imageWidth: number,
-    imageHeight: number,
-    attrAlt: string,
+    linkUrl: string,
+    styleForComponent: string,
 };
 
 const WCImage = (
     props: IWCImage,
 ) => {
     const {
-        styleForComponent,
+        attrAlt,
+        hasLink,
+        imageHeight,
         imageUrl,
         imageWidth,
-        imageHeight,
-        attrAlt,
+        linkUrl,
+        styleForComponent,
     } = props;
     return(
-        <div className={styleForComponent}>
-          <Image
-            src={imageUrl}
-            width={imageWidth}
-            height={imageHeight}
-            alt={attrAlt}
-          />
-        </div>
+        hasLink ? (
+            <div className={styleForComponent}>
+                <a href={linkUrl}>
+                    <Image
+                        src={imageUrl}
+                        width={imageWidth}
+                        height={imageHeight}
+                        alt={attrAlt}
+                    />
+                </a>
+            </div>
+        ) : (
+            <div className={styleForComponent}>
+                <Image
+                    src={imageUrl}
+                    width={imageWidth}
+                    height={imageHeight}
+                    alt={attrAlt}
+                />
+            </div>
+        )
     );
 };
 

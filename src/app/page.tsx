@@ -9,18 +9,22 @@ const Home = () => {
     <main>
       <header className="wrapper-header">
         <WCImage
-          styleForComponent="wrapper-header-logo"
+          attrAlt="Sochi.Ru"
+          hasLink={false}
+          imageHeight={50}
           imageUrl="logo-sochi.png"
           imageWidth={120}
-          imageHeight={50}
-          attrAlt="Sochi.Ru"
+          linkUrl=""
+          styleForComponent="wrapper-header-logo"
         />
         <WCImage
-          styleForComponent="wrapper-header-logo"
+          attrAlt="Claro Sports"
+          hasLink={false}
+          imageHeight={50}
           imageUrl="logo-claro-sports.png"
           imageWidth={120}
-          imageHeight={50}
-          attrAlt="Claro Sports"
+          linkUrl=""
+          styleForComponent="wrapper-header-logo"
         />
       </header>
       <section className="wrapper-high-impact">
@@ -45,17 +49,51 @@ const Home = () => {
           <a href="#">Contacto</a>
         </div>
         <WCImage
-          styleForComponent="wrapper-footer-logo"
+          attrAlt="Sochi.Ru"
+          hasLink={false}
+          imageHeight={60}
           imageUrl="logo-sochi-color.png"
           imageWidth={140}
-          imageHeight={60}
-          attrAlt="Sochi.Ru"
+          linkUrl=""
+          styleForComponent="wrapper-footer-logo"
         />
         <div className="wrapper-social-media">
-          <a href="#">Instangram</a>
-          <a href="#">X</a>
-          <a href="#">Facebook</a>
-          <a href="#">YouTube</a>
+          <WCImage
+            attrAlt="Red Social Instagram"
+            hasLink={true}
+            imageHeight={40}
+            imageUrl="icon-instagram.png"
+            imageWidth={40}
+            linkUrl="#"
+            styleForComponent="wrapper-video"
+          />
+          <WCImage
+            attrAlt="Red Social X"
+            hasLink={true}
+            imageHeight={40}
+            imageUrl="icon-x.png"
+            imageWidth={40}
+            linkUrl="#"
+            styleForComponent="wrapper-video"
+          />
+          <WCImage
+            attrAlt="Red Social Facebook"
+            hasLink={true}
+            imageHeight={40}
+            imageUrl="icon-facebook.png"
+            imageWidth={40}
+            linkUrl="#"
+            styleForComponent="wrapper-video"
+          />
+          <WCImage
+            attrAlt="Red Social YouTube"
+            hasLink={true}
+            imageHeight={40}
+            imageUrl="icon-youtube.png"
+            imageWidth={40}
+            linkUrl="#"
+            styleForComponent="wrapper-video"
+          />
         </div>
       </footer>
     </main>
