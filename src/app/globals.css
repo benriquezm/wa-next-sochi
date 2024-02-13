@@ -182,18 +182,26 @@ footer {
     height: 100%;
     border: 0;
   }
-  
-  /*.wrapper-carousel {
-    display: flex;
-    overflow: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
+
+  .carousel-multicontent {
+    display: grid;
+    place-items: center;
   }
 
-  .wrapper-video-item {
-    flex: 0 0 auto;
-    margin-right: 20px;
-    scroll-snap-align: start;
-    width: 33.33%;
-  }*/
+  .wrapper-carousel-mobile {
+    width: 300px;
+    height: 250px;
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .wrapper-video-mobile {
+    width: 250px;
+    flex-shrink: 0;
+    height: 100%;
+    margin-right: 10px;
+    text-align: center;
+    background-color: #585858;
+    border-radius: 10px;
+  }
 }
