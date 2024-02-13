@@ -14,6 +14,7 @@ const handlerVideoClick = (e: React.MouseEvent<HTMLAnchorElement>): void => {
 
 const WCCarouselMulticontent = () => {
     const isMobile = useCheckViewport();
+    
     return(
         <section className="carousel-multicontent">
             <h1 className="carousel-header">CLARO SPORTS EN SOCHI 2014</h1>
