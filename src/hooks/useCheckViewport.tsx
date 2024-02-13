@@ -1,19 +1,21 @@
+"use client";
+
 import {useEffect, useState} from "react";
 
-const useCheckViewport = () => {
-    const [width, setWidth] = useState(window.innerWidth);
-    const handleWindowSizeChange = () => {
-        setWidth(window.innerWidth);
-    }
+const useCheckViewport  = () => {
+    const [isMobile, setIsMobile] = useState<boolean>(false);
 
     useEffect(() => {
-        window.addEventListener('resize', handleWindowSizeChange);
-        return () => {
-            window.removeEventListener('resize', handleWindowSizeChange);
+        if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i)) {
+            console.log("Estás usando un dispositivo móvil!!");
+            setIsMobile(true);
+        } else {
+            console.log("No estás usando un móvil");
+            setIsMobile(false);
         }
     }, []);
 
-    return (width <= 768);
+    return isMobile;
 }
 
 export default useCheckViewport;
